@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft Yahei",sans-serif}
+        body{background:#0f172a;color:#e2e8f0;line-height:1.7}
+        header{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#1e293b,#334155);padding:20px;text-align:center}
+        .avatar{width:160px;height:160px;border-radius:50%;border:4px solid #38bdf8;margin-bottom:24px;object-fit:cover}
+        h1{font-size:42px;margin-bottom:12px;color:#ffffff}
+        .sub{font-size:18px;color:#94a3b8;margin-bottom:32px}
+        .btn-group a{display:inline-block;padding:12px 28px;margin:0 10px;border-radius:999px;text-decoration:none;font-weight:500;transition:0.3s}
+        .btn-blue{background:#38bdf8;color:#0f172a}
+        .btn-blue:hover{background:#0ea5e9}
+        .btn-outline{border:2px solid #38bdf8;color:#38bdf8}
+        .btn-outline:hover{background:#38bdf8;color:#0f172a}
+        section{max-width:1100px;margin:0 auto;padding:80px 20px}
+        .sec-title{font-size:30px;text-align:center;margin-bottom:50px;color:#fff}
+        .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+        .skill-list{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px}
+        .skill-tag{padding:8px 18px;background:#1e293b;border-radius:6px;color:#38bdf8}
+        .project-card{background:#1e293b;padding:24px;border-radius:12px;margin-bottom:20px;transition:0.3s}
+        .project-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px #00000040}
+        footer{text-align:center;padding:40px;color:#64748b;border-top:1px solid #1e293b}
+        @media(max-width:768px){
+            .about{grid-template-columns:1fr}
+            h1{font-size:30px}
+        }
+    </style>
+</head>
+<body>
+<!-- 首页头部 -->
+<header>
+    < img class="avatar" src="https://picsum.photos/id/1005/300/300" alt="头像">
+    <h1>张三 | 个人作品集</h1>
+    <p class="sub">前端爱好者 / 网页设计 / 在校学生</p >
+    <div class="btn-group">
+        <a href=" " class="btn-blue">关于我</a >
+        <a href="#project" class="btn-outline">我的项目</a >
+    </div>
+</header>
+
+<!-- 关于我 -->
+<section id="about">
+    <h2 class="sec-title">关于我</h2>
+    <div class="about">
+        <div>
+            <h3>个人简介</h3>
+            <p>我是一名在校计算机专业学生，擅长网页UI设计与静态页面开发，熟练使用HTML、CSS制作响应式网站，本次页面为期末作业个人单页网站，使用AI辅助完成界面设计。</p >
+        </div>
+        <div>
+            <h3>技能栈</h3>
+            <div class="skill-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">网页UI设计</span>
+                <span class="skill-tag">GitHub Pages部署</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 项目展示 -->
+<section id="project" style="background:#1e293b;">
+    <h2 class="sec-title">作品项目</h2>
+    <div class="project-card">
+        <h3>个人单页官网</h3>
+        <p>期末大作业，纯静态HTML页面，自适应移动端，深色简约UI风格，可部署至GitHub Pages免费上线。</p >
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+    <p>©2026 个人网站 | GitHub Pages 部署</p >
+</footer>
+</body>
+</html>
